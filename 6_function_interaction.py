@@ -16,7 +16,11 @@
 # "The sum of your dice is {sum_dice}. It looks like a winning roll"
 
 # Hint: use the random library's choice or randint method to choose a random value between 1 and 6.
-
+def throw_dice():
+    import random
+    die1 = random.randint(1, 6)
+    die2 = random.randint(1, 6)
+    return die1, die2
 
 
 # Interactions Between Functions Practice #2
@@ -39,7 +43,9 @@
 # If the coin comes up "Heads", it should print to the screen: "List was saved" and return the list intact.
 
 # Hint: Use the random library's choice method to choose an element at random from a sequence.
-
+def toss_coin():
+    import random
+    return random.choice(["Heads", "Tails"])    
 
 
 
